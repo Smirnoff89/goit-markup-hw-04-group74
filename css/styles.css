@@ -138,14 +138,13 @@ span.web {
 /*--------MAIN-HERO--------*/
 
 .hero {
-    background-color: var(--primary-bg-color);
     padding: 200px 0px;
-    display: flex;
     align-items: center;
-    background-image: url(../imgages/bg-hero-img.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imgages/hero-bg-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
 
 .hero-title {
