@@ -142,6 +142,10 @@ span.web {
     padding: 200px 0px;
     display: flex;
     align-items: center;
+    background-image: url(../imgages/bg-hero-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-title {
