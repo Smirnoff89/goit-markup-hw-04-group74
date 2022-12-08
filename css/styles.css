@@ -257,7 +257,6 @@ ul {
 /*--------MAIN-TEAM--------*/
 
 .team {
-    background-color: var(--button-color);
     padding: 94px 0px;
 }
 
@@ -295,7 +294,7 @@ ul {
     text-align: center;
     color: var(--title-text-color);
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .team-item {
@@ -304,7 +303,42 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-item {
+.team-links {
+    margin-bottom: 30px;
+}
+
+.team-links-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.team-links-item {
+    width: 44px;
+    height: 44px;
+}
+
+.team-links-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.team-soc-link:hover {
+    background-color: var(--accent-color);
+}
+
+.team-soc-icon:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
 }
 
 /*--------PORTFOLIO--------*/
