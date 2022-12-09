@@ -233,6 +233,16 @@ ul {
     width: 100%;
 }
 
+.items-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-color);
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
 .items-pre-title {
     font-weight: 700;
     text-transform: uppercase;
