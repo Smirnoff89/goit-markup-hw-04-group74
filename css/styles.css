@@ -331,6 +331,7 @@ ul {
 .team-links-item {
     width: 44px;
     height: 44px;
+    border-radius: 50%;
 }
 
 .team-links-item:not(:last-child) {
@@ -350,9 +351,16 @@ ul {
     background-color: var(--accent-color);
 }
 
+.team-soc-icon {
+    fill: var(--border-color-three);
+}
+
 .team-soc-icon:hover {
-    background-color: var(--accent-color);
-    color: var(--primary-white-color);
+    fill: var(--primary-white-color);
+}
+
+.team-links-item:hover .team-soc-icon {
+    fill: var(--primary-white-color)
 }
 
 /*--------CLIENTS--------*/
