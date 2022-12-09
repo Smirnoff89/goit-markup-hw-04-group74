@@ -9,6 +9,7 @@
     --secondary-bg-color: #188CE8;
     --border-color-one: #ECECEC;
     --border-color-two: #EEEEEE;
+    --border-color-three: #AFB1B8;
 }
 
 p,
@@ -257,6 +258,7 @@ ul {
 /*--------MAIN-TEAM--------*/
 
 .team {
+    background-color: var(--button-color);
     padding: 94px 0px;
 }
 
@@ -339,6 +341,57 @@ ul {
 .team-soc-icon:hover {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+}
+
+/*--------CLIENTS--------*/
+
+.clients {
+    padding: 94px 0px;
+}
+
+.clients-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0 auto;
+    background-color: var(--primary-white-color);
+}
+
+.clients-items {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--border-color-three);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-items:hover {
+    border-color: var(--accent-color);
+    background-color: var(--primary-white-color);
+}
+
+.clients-group-logo:hover {
+    background-color: var(--primary-white-color);
+}
+
+.clients-items:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-icon:hover {
+    fill: #188CE8;
 }
 
 /*--------PORTFOLIO--------*/
