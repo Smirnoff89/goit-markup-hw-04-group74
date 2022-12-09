@@ -383,7 +383,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 0 auto;
     background-color: var(--primary-white-color);
 }
 
@@ -399,19 +398,19 @@ ul {
 
 .clients-items:hover {
     border-color: var(--accent-color);
-    background-color: var(--primary-white-color);
+    cursor: pointer;
 }
 
-.clients-group-logo:hover {
-    background-color: var(--primary-white-color);
+.clients-items:hover .clients-icon {
+    fill: var(--accent-color);
 }
 
 .clients-items:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients-icon:hover {
-    fill: #188CE8;
+.clients-icon {
+    fill: var(--border-color-three);
 }
 
 /*--------PORTFOLIO--------*/
