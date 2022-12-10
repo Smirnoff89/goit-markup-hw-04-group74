@@ -123,6 +123,8 @@ span.web {
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     padding: 32px 0px;
+    display: flex;
+    align-items: center;
 }
 
 .header-mail:hover,
@@ -136,6 +138,8 @@ span.web {
     letter-spacing: 0.02em;
     color: var(--title-text-color);
     padding: 32px 0px;
+    display: flex;
+    align-items: center;
 }
 
 .header-tel:hover,
@@ -152,12 +156,11 @@ span.web {
 
 .hero {
     padding: 200px 0px;
-    align-items: center;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imgages/hero-bg-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    max-width: 1600px;
 }
 
 .hero-title {
@@ -238,7 +241,7 @@ ul {
     align-items: center;
     justify-content: center;
     background-color: var(--button-color);
-    padding: 25px 100px;
+    height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
 }
@@ -341,7 +344,6 @@ ul {
 .team-links-item {
     width: 44px;
     height: 44px;
-    border-radius: 50%;
 }
 
 .team-links-item:not(:last-child) {
@@ -357,19 +359,18 @@ ul {
     border-radius: 50%;
 }
 
-.team-soc-link:hover {
-    background-color: var(--accent-color);
-}
-
 .team-soc-icon {
     fill: var(--border-color-three);
 }
 
-.team-soc-icon:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: var(--accent-color);
     fill: var(--primary-white-color);
 }
 
-.team-links-item:hover .team-soc-icon {
+.team-links-item:hover .team-soc-icon,
+.team-links-item:focus .team-soc-icon {
     fill: var(--primary-white-color)
 }
 
@@ -391,8 +392,6 @@ ul {
 
 .clients-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--primary-white-color);
 }
 
@@ -401,26 +400,30 @@ ul {
     height: 92px;
     border: 1px solid var(--border-color-three);
     border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.clients-items:hover {
+.clients-group-logo {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--border-color-three);
+}
+
+.clients-items:hover,
+.clients-items:focus {
     border-color: var(--accent-color);
     cursor: pointer;
 }
 
-.clients-items:hover .clients-icon {
+.clients-items:hover .clients-icon,
+.clients-items:focus .clients-icon {
     fill: var(--accent-color);
 }
 
 .clients-items:not(:last-child) {
     margin-right: 30px;
-}
-
-.clients-icon {
-    fill: var(--border-color-three);
 }
 
 /*--------PORTFOLIO--------*/
@@ -551,7 +554,7 @@ span.studio {
     color: var(--primary-white-color);
 }
 
-.footer-title {
+.footer-pre-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -564,8 +567,6 @@ span.studio {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 206px;
-    height: 80px;
 }
 
 .footer-icons {
@@ -593,7 +594,8 @@ span.studio {
     fill: var(--primary-white-color);
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
     fill-opacity: var(--primary-white-color);
     background-color: var(--accent-color);
 }
